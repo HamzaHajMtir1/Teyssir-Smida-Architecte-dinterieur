@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import PlaceholderBadge from "@/components/PlaceholderBadge";
 import { projects } from "@/data/content";
 
 export const metadata = {
   title: "Projets — Teyssir Smida",
-  description: "Projets d'architecture d'intérieur : images et dossiers PDF.",
+  description:
+    "Projets d'architecture d'intérieur : aperçus et albums photos complets sur Google Drive.",
 };
 
 export default function ProjectsPage() {
@@ -15,8 +15,8 @@ export default function ProjectsPage() {
         <div className="container py-16 lg:py-24">
           <h1 className="font-display text-5xl tracking-tight lg:text-6xl">Projets</h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-[var(--ink-muted)]">
-            Ensemble des projets — photographies et dossiers PDF. Les visuels actuels sont
-            provisoires ; ils seront remplacés dès que vous enverrez vos images et fichiers.
+            Deux images d&apos;aperçu par projet. Cliquez sur « Voir toutes les photos » pour
+            ouvrir l&apos;album complet sur Google Drive.
           </p>
         </div>
       </section>
@@ -39,17 +39,16 @@ export default function ProjectsPage() {
                       className="object-cover"
                       sizes="(max-width: 768px) 100vw, 35vw"
                     />
-                    {project.placeholder && (
-                      <div className="absolute left-3 top-3">
-                        <PlaceholderBadge />
-                      </div>
-                    )}
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className={`flex flex-col justify-center lg:col-span-5 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
+            <div
+              className={`flex flex-col justify-center lg:col-span-5 ${
+                index % 2 === 1 ? "lg:order-1" : ""
+              }`}
+            >
               <p className="text-[0.7rem] tracking-[0.16em] uppercase text-[var(--ink-muted)]">
                 {project.category} · {project.year}
               </p>
@@ -59,18 +58,18 @@ export default function ProjectsPage() {
               </p>
 
               <div className="mt-8">
-                {project.pdf ? (
+                {project.driveUrl ? (
                   <a
-                    href={project.pdf}
+                    href={project.driveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary"
                   >
-                    Télécharger le PDF
+                    Voir toutes les photos
                   </a>
                 ) : (
                   <span className="inline-flex items-center border border-dashed border-[var(--line)] px-5 py-2.5 text-sm text-[var(--ink-muted)]">
-                    PDF à venir
+                    Album à venir
                   </span>
                 )}
               </div>
@@ -82,8 +81,7 @@ export default function ProjectsPage() {
       <section className="border-t border-[var(--line)] bg-[var(--stone)]/40">
         <div className="container flex flex-col items-start gap-6 py-14 sm:flex-row sm:items-center sm:justify-between">
           <p className="max-w-md text-[var(--ink-muted)]">
-            Vous avez des photos ou des PDF de projets ? Envoyez-les pour remplacer ces
-            placeholders.
+            Pour un projet ou une collaboration, n&apos;hésitez pas à me contacter.
           </p>
           <Link href="/contact" className="btn-primary">
             Me contacter

@@ -103,62 +103,132 @@ export const experiences = [
   },
 ];
 
-/** Placeholder projects until real photos & PDFs are provided */
+/** Projects — 2 preview images each; full album on Google Drive */
 export const projects = [
   {
-    id: "residence-contemporaine",
-    title: "Résidence contemporaine",
-    category: "Résidentiel",
-    year: "2023",
+    id: "1ere-annee",
+    title: "1ère année",
+    category: "Formation",
+    year: "1ère année",
     description:
-      "Aménagement d'un salon et d'espaces de vie — plans, matériaux et visualisation 3D. Contenu provisoire en attendant vos images et PDF.",
+      "Travaux et projets réalisés en première année d'architecture d'intérieur.",
     images: [
-      { src: "/image/living.jpg", alt: "Placeholder salon" },
-      { src: "/image/drowing.jpg", alt: "Placeholder pièce de vie" },
+      { src: "/image/gallery.jpg", alt: "Aperçu 1ère année" },
+      { src: "/image/gallery1.jpg", alt: "Aperçu 1ère année 2" },
     ],
-    pdf: null,
+    driveUrl: "https://drive.google.com/drive/folders/1KepWDaw-ABEvPxV4C8dFNrkgmJrMFBsJ",
     placeholder: true,
   },
   {
-    id: "cuisine-ouverte",
-    title: "Cuisine ouverte",
-    category: "Résidentiel",
-    year: "2023",
+    id: "2eme-annee",
+    title: "2ème année",
+    category: "Formation",
+    year: "2ème année",
     description:
-      "Étude d'aménagement cuisine — circulations, mobilier et rendu. Images et dossier PDF à remplacer.",
+      "Travaux et projets réalisés en deuxième année d'architecture d'intérieur.",
     images: [
-      { src: "/image/kitchen1.jpg", alt: "Placeholder cuisine" },
-      { src: "/image/kitchen.png", alt: "Placeholder cuisine 2" },
+      { src: "/image/gallery2.jpg", alt: "Aperçu 2ème année" },
+      { src: "/image/gallery3.jpg", alt: "Aperçu 2ème année 2" },
     ],
-    pdf: null,
+    driveUrl: "https://drive.google.com/drive/folders/16m9613grc4eEoPPzZ9hOh-o8UL2pc_1b",
     placeholder: true,
   },
   {
-    id: "suite-parentale",
-    title: "Suite parentale",
-    category: "Résidentiel",
-    year: "2023",
+    id: "pfe",
+    title: "PFE",
+    category: "Diplôme",
+    year: "PFE",
     description:
-      "Conception d'une chambre et d'un espace nuit — atmosphère, matériaux, éclairage. Visuels temporaires.",
+      "Projet de fin d'études — conception et présentation complète.",
     images: [
-      { src: "/image/badroom.jpg", alt: "Placeholder chambre" },
-      { src: "/image/project3.jpg", alt: "Placeholder chambre 2" },
+      { src: "/image/project.jpg", alt: "Aperçu PFE" },
+      { src: "/image/project4.png", alt: "Aperçu PFE 2" },
     ],
-    pdf: null,
+    driveUrl: "https://drive.google.com/drive/folders/1pHn5gd3wNBrPyr9E-uL42rnLwZGkRIID",
     placeholder: true,
   },
   {
-    id: "bureau-professionnel",
-    title: "Bureau professionnel",
+    id: "cafe",
+    title: "Café",
     category: "Commercial",
-    year: "2023",
+    year: "Projet",
     description:
-      "Aménagement d'un espace de travail — ergonomie, planches matériaux et présentation client. PDF à venir.",
+      "Aménagement d'un espace café — ambiance, circulation et mobilier.",
     images: [
-      { src: "/image/project2.jpg", alt: "Placeholder bureau" },
-      { src: "/image/gallery11.jpg", alt: "Placeholder bureau 2" },
+      { src: "/image/living.jpg", alt: "Aperçu café" },
+      { src: "/image/drowing.jpg", alt: "Aperçu café 2" },
     ],
-    pdf: null,
+    driveUrl: "https://drive.google.com/drive/folders/17PdjftskPTofnuutrZHm-PBE2QOBF2Z7",
+    placeholder: true,
+  },
+  {
+    id: "centre-coiffure",
+    title: "Centre de coiffure",
+    category: "Commercial",
+    year: "Projet",
+    description:
+      "Conception d'un centre de coiffure — zones d'accueil, postes de travail et atmosphère.",
+    images: [
+      { src: "/image/gallery11.jpg", alt: "Aperçu centre de coiffure" },
+      { src: "/image/gallery1123.jpg", alt: "Aperçu centre de coiffure 2" },
+    ],
+    driveUrl: "https://drive.google.com/drive/folders/1HxVbsV2qelVxZ9uuHGOFZa5sYcASHUpf",
+    placeholder: true,
+  },
+  {
+    id: "cuisine",
+    title: "Cuisine",
+    category: "Résidentiel",
+    year: "Projet",
+    description:
+      "Aménagement cuisine — plans, matériaux et visualisation.",
+    images: [
+      { src: "/image/kitchen1.jpg", alt: "Aperçu cuisine" },
+      { src: "/image/kitchen.png", alt: "Aperçu cuisine 2" },
+    ],
+    driveUrl: "https://drive.google.com/drive/folders/1NOnRYsUbvXQ1emYa6x4RL-4l41sZ1rTl",
+    placeholder: true,
+  },
+  {
+    id: "villa-1",
+    title: "Villa 1",
+    category: "Résidentiel",
+    year: "Projet",
+    description:
+      "Aménagement intérieur d'une villa — espaces de vie et atmosphère.",
+    images: [
+      { src: "/image/gallery6.jpg", alt: "Aperçu villa 1" },
+      { src: "/image/gallery7.jpg", alt: "Aperçu villa 1 — 2" },
+    ],
+    driveUrl: "https://drive.google.com/drive/folders/1eFE94LtZUmtwoFFwpFqX48agjsJ7A4Ny",
+    placeholder: true,
+  },
+  {
+    id: "villa-2",
+    title: "Villa 2",
+    category: "Résidentiel",
+    year: "Projet",
+    description:
+      "Aménagement intérieur d'une villa — volumes, matériaux et lumière.",
+    images: [
+      { src: "/image/gallery8.jpg", alt: "Aperçu villa 2" },
+      { src: "/image/gallery9.jpg", alt: "Aperçu villa 2 — 2" },
+    ],
+    driveUrl: "https://drive.google.com/drive/folders/1VaEgKIw-BuGuaqOqNW-_9FrMxKA7Qtxz",
+    placeholder: true,
+  },
+  {
+    id: "villa-3",
+    title: "Villa 3",
+    category: "Résidentiel",
+    year: "Projet",
+    description:
+      "Aménagement intérieur d'une villa — conception et rendus.",
+    images: [
+      { src: "/image/gallery10.jpg", alt: "Aperçu villa 3" },
+      { src: "/image/gallery12.jpg", alt: "Aperçu villa 3 — 2" },
+    ],
+    driveUrl: "https://drive.google.com/drive/folders/1cEXDmFUf0S197_cLMxwu9Tkd1EwNB20O",
     placeholder: true,
   },
 ];

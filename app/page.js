@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import PlaceholderBadge from "@/components/PlaceholderBadge";
 import { profile, projects } from "@/data/content";
 
 export default function Home() {
@@ -19,9 +18,6 @@ export default function Home() {
             sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[rgba(20,24,22,0.82)] via-[rgba(20,24,22,0.55)] to-[rgba(20,24,22,0.25)]" />
-          <div className="absolute left-6 top-6 z-10 sm:left-10 sm:top-10">
-            <PlaceholderBadge />
-          </div>
         </div>
 
         <div className="container relative z-10 flex min-h-[calc(100vh-5.5rem)] flex-col justify-end pb-16 pt-28 text-[var(--paper)] lg:pb-20">
@@ -89,9 +85,6 @@ export default function Home() {
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                  <div className="absolute left-3 top-3">
-                    <PlaceholderBadge />
-                  </div>
                 </div>
                 <div className="mt-4">
                   <p className="text-[0.7rem] tracking-[0.14em] uppercase text-[var(--ink-muted)]">
