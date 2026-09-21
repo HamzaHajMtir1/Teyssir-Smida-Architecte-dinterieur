@@ -54,7 +54,7 @@ export default function Footer() {
       <div className="border-t border-[var(--line)]">
         <div className="container flex flex-col gap-2 py-6 text-xs text-[var(--ink-muted)] sm:flex-row sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {profile.name}
+            © 2026 {profile.name}
           </p>
           <p>Portfolio personnel — architecture d&apos;intérieur</p>
         </div>

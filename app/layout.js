@@ -10,8 +10,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
-      <body className="min-h-screen antialiased">
+    <html lang="fr" data-scroll-behavior="smooth">
+      <body className="min-h-screen antialiased" suppressHydrationWarning>
         <Header />
         <main>{children}</main>
         <Footer />

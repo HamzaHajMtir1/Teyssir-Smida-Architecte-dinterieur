@@ -103,7 +103,7 @@ export const experiences = [
   },
 ];
 
-/** Projects — 2 preview images each; full album on Google Drive */
+/** Projects — 3 preview images each; full album on Google Drive */
 export const projects = [
   {
     id: "1ere-annee",
@@ -113,8 +113,9 @@ export const projects = [
     description:
       "Travaux et projets réalisés en première année d'architecture d'intérieur.",
     images: [
-      { src: "/image/gallery.jpg", alt: "Aperçu 1ère année" },
+      { src: "/image/gallery.jpg", alt: "Aperçu 1ère année 1" },
       { src: "/image/gallery1.jpg", alt: "Aperçu 1ère année 2" },
+      { src: "/image/gallery2.jpg", alt: "Aperçu 1ère année 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1KepWDaw-ABEvPxV4C8dFNrkgmJrMFBsJ",
     placeholder: true,
@@ -127,8 +128,9 @@ export const projects = [
     description:
       "Travaux et projets réalisés en deuxième année d'architecture d'intérieur.",
     images: [
-      { src: "/image/gallery2.jpg", alt: "Aperçu 2ème année" },
-      { src: "/image/gallery3.jpg", alt: "Aperçu 2ème année 2" },
+      { src: "/image/gallery3.jpg", alt: "Aperçu 2ème année 1" },
+      { src: "/image/gallery4.jpg", alt: "Aperçu 2ème année 2" },
+      { src: "/image/gallery6.jpg", alt: "Aperçu 2ème année 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/16m9613grc4eEoPPzZ9hOh-o8UL2pc_1b",
     placeholder: true,
@@ -141,8 +143,9 @@ export const projects = [
     description:
       "Projet de fin d'études — conception et présentation complète.",
     images: [
-      { src: "/image/project.jpg", alt: "Aperçu PFE" },
+      { src: "/image/project.jpg", alt: "Aperçu PFE 1" },
       { src: "/image/project4.png", alt: "Aperçu PFE 2" },
+      { src: "/image/project2.jpg", alt: "Aperçu PFE 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1pHn5gd3wNBrPyr9E-uL42rnLwZGkRIID",
     placeholder: true,
@@ -155,8 +158,9 @@ export const projects = [
     description:
       "Aménagement d'un espace café — ambiance, circulation et mobilier.",
     images: [
-      { src: "/image/living.jpg", alt: "Aperçu café" },
+      { src: "/image/living.jpg", alt: "Aperçu café 1" },
       { src: "/image/drowing.jpg", alt: "Aperçu café 2" },
+      { src: "/image/gallery7.jpg", alt: "Aperçu café 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/17PdjftskPTofnuutrZHm-PBE2QOBF2Z7",
     placeholder: true,
@@ -169,8 +173,9 @@ export const projects = [
     description:
       "Conception d'un centre de coiffure — zones d'accueil, postes de travail et atmosphère.",
     images: [
-      { src: "/image/gallery11.jpg", alt: "Aperçu centre de coiffure" },
+      { src: "/image/gallery11.jpg", alt: "Aperçu centre de coiffure 1" },
       { src: "/image/gallery1123.jpg", alt: "Aperçu centre de coiffure 2" },
+      { src: "/image/gallery8.jpg", alt: "Aperçu centre de coiffure 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1HxVbsV2qelVxZ9uuHGOFZa5sYcASHUpf",
     placeholder: true,
@@ -183,8 +188,9 @@ export const projects = [
     description:
       "Aménagement cuisine — plans, matériaux et visualisation.",
     images: [
-      { src: "/image/kitchen1.jpg", alt: "Aperçu cuisine" },
-      { src: "/image/kitchen.png", alt: "Aperçu cuisine 2" },
+      { src: "/image/gallery13.jpg", alt: "Aperçu cuisine 1" },
+      { src: "/image/gallery14.jpg", alt: "Aperçu cuisine 2" },
+      { src: "/image/gallery15.jpg", alt: "Aperçu cuisine 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1NOnRYsUbvXQ1emYa6x4RL-4l41sZ1rTl",
     placeholder: true,
@@ -197,8 +203,9 @@ export const projects = [
     description:
       "Aménagement intérieur d'une villa — espaces de vie et atmosphère.",
     images: [
-      { src: "/image/gallery6.jpg", alt: "Aperçu villa 1" },
-      { src: "/image/gallery7.jpg", alt: "Aperçu villa 1 — 2" },
+      { src: "/image/villa1.jpg", alt: "Aperçu villa 1 — 1" },
+      { src: "/image/villa12.jpg", alt: "Aperçu villa 1 — 2" },
+      { src: "/image/villa123.jpg", alt: "Aperçu villa 1 — 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1eFE94LtZUmtwoFFwpFqX48agjsJ7A4Ny",
     placeholder: true,
@@ -211,8 +218,9 @@ export const projects = [
     description:
       "Aménagement intérieur d'une villa — volumes, matériaux et lumière.",
     images: [
-      { src: "/image/gallery8.jpg", alt: "Aperçu villa 2" },
-      { src: "/image/gallery9.jpg", alt: "Aperçu villa 2 — 2" },
+      { src: "/image/villa2.jpg", alt: "Aperçu villa 2 — 1" },
+      { src: "/image/villa22.jpg", alt: "Aperçu villa 2 — 2" },
+      { src: "/image/villa23.jpg", alt: "Aperçu villa 2 — 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1VaEgKIw-BuGuaqOqNW-_9FrMxKA7Qtxz",
     placeholder: true,
@@ -225,10 +233,26 @@ export const projects = [
     description:
       "Aménagement intérieur d'une villa — conception et rendus.",
     images: [
-      { src: "/image/gallery10.jpg", alt: "Aperçu villa 3" },
-      { src: "/image/gallery12.jpg", alt: "Aperçu villa 3 — 2" },
+      { src: "/image/villa3.jpg", alt: "Aperçu villa 3 — 1" },
+      { src: "/image/villa32.jpg", alt: "Aperçu villa 3 — 2" },
+      { src: "/image/villa33.jpg", alt: "Aperçu villa 3 — 3" },
     ],
     driveUrl: "https://drive.google.com/drive/folders/1cEXDmFUf0S197_cLMxwu9Tkd1EwNB20O",
+    placeholder: true,
+  },
+  {
+    id: "espace-exterieur",
+    title: "Espace extérieur",
+    category: "Résidentiel",
+    year: "Projet",
+    description:
+      "Aménagement d'un espace extérieur — terrasse, volumes et atmosphère.",
+    images: [
+      { src: "/image/espace1.jpg", alt: "Aperçu espace extérieur 1" },
+      { src: "/image/espace2.jpg", alt: "Aperçu espace extérieur 2" },
+      { src: "/image/espace3.jpg", alt: "Aperçu espace extérieur 3" },
+    ],
+    driveUrl: "#",
     placeholder: true,
   },
 ];
